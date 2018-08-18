@@ -1,0 +1,184 @@
+ <!DOCTYPE html>
+
+<!-- Job Application Tracker -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Job Application Tracker</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+      <script <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- jQuery (Bootstrap JS plugins depend on it) -->
+      <script src="js/jquery-2.1.4.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/ajax-utils.js"></script>
+      <script src="js/script.js"></script>
+  
+  </head>
+
+  <body>
+
+  <nav id = "header" class="navbar navbar-default">
+
+      <div class="container">
+
+        <div id="title" class="navhead">
+
+         <h1>The Job Application Tracker</h1>
+         
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      </div>
+
+      <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Main Menu</a>
+            </li>
+            <li>
+              <a href="interview.html">
+                <span class="glyphicon glyphicon-calendar"></span><br class="hidden-xs">Add Interview</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-search"></span><br class="hidden-xs"> Search</a>
+            </li>
+            
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      
+      </div><!-- Container -->
+
+    </nav>
+   <div id="main" class="container"> 
+       
+      <div class="jumbotron">
+       
+        <div id="description">
+          
+          <p>Enter your Job Application Information:</p>
+     
+        </div> 
+
+      <div  id = "add-form">
+           <form  id = "addapp" class="main-form" method = "post" action="#">
+             <div>
+              <fieldset>
+                <legend>Application Info:</legend>
+                  <div>
+                    <label for="position">Position: </label>
+                    <input type="text" id="position" name="position">
+                  </div>
+                  <div>
+                    <label for="date_sub">Submitted on: </label>
+                    <input type="date" id = "date_sub" name="date_sub">
+                  </div>
+
+              </fieldset>
+
+              <fieldset>
+                <div>
+                  <legend>Have you scheduled an Interview?</legend>
+                    <input type="radio" id="interview-y"
+                       name="interview" value="interview-y">
+                     <label for="interview-Yes">Yes  </label>
+
+                     <input type="radio" id="interview-n"
+                       name="interview" value="interview-n" checked>
+                     <label for="interview-No"> No  </label>
+
+                </div>
+              </fieldset>
+
+              <div>
+              <fieldset>
+                <legend>Company Info:</legend>
+
+                  <div>
+                    <label for="coname">Company: </label>
+                    <input type="text" id="coname" name="co_name">
+                 
+                    <label for="hr_name">  HR Contact: </label>
+                    <input type="text" id = "hr_name" name="hr_name">
+                  </div>
+
+                  <div>
+                    
+                    <label for="hr_phone">HR Phone No: </label>
+                    <input type="tel" id = "hr_phone" name="hr_phone">
+                  
+                    <label for="hr_email">  Email: </label>
+                    <input type="email" id = "hr_email" name="hr_email">
+
+                  </div>
+              
+               </fieldset>
+             </div>
+
+            
+             
+             <div>
+                  <fieldset>
+                    <legend>Documents Submitted</legend>
+                      
+                      <div>
+                        
+                        <input type="checkbox" id="resume" name="resume" value="resume">
+                        <label for="resume">Resume</label>
+                      
+                      </div>
+                          
+                      <div>
+                        
+                        <input type="checkbox" id="coverlet" name="coverlet" value="coverlet">
+                        <label for="coverlet">Cover Letter</label>
+                      
+                      </div>
+                          
+                        <div>
+                          
+                          <input type="checkbox" id="other" name="other" value="other">
+                          <label for="other">Others</label>
+                          
+                        </div>
+                    </fieldset>
+              </div>
+
+              
+             <div>
+               <input id = "appsubmit" class="form-btn" type ="submit" value = "Add">
+               <input class = "form-btn" type ="reset" value = "Clear">
+             </div>
+            
+          </form> 
+       </div>
+
+       </div> 
+      
+      </div>
+
+ <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <div id="myApps" class="col-sm-6">
+          <h4><strong>Current Open Job Applications</strong></h4>
+
+        </div>
+     
+        <div id="myInter" class="col-sm-6">
+     
+        </div>
+    </div>
+    </div>    
+  </footer>
+
+  
+  </body>
+ </html>

@@ -1,0 +1,146 @@
+ <!DOCTYPE html>
+
+<!-- Job Application Tracker -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>The Interview Tracker</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+      <script <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <!-- jQuery (Bootstrap JS plugins depend on it) -->
+      <script src="js/jquery-2.1.4.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/ajax-utils.js"></script>
+      <script src="js/script.js"></script>
+  </head>
+
+  <body>
+
+  <nav id = "header" class="navbar navbar-default">
+
+      <div class="container">
+
+        <div id="title" class="navhead">
+
+         <h1>The Job Application Tracker</h1>
+         
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      </div>
+
+      <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Main Menu</a>
+            </li>
+            <li>
+              <a href="addapp.html">
+                <span class="glyphicon glyphicon-plus-sign"></span><br class="hidden-xs">Add Job Application</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-search"></span><br class="hidden-xs"> Search</a>
+            </li>
+            
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      
+      </div><!-- Container -->
+
+    </nav>
+   <div id="main" class="container"> 
+       
+      <div class="jumbotron">
+       
+        <div id="description">
+          
+          <p>Enter your Interview Information:</p>
+     
+        </div> 
+
+      <div  id = "interview-form" class="main-form">
+           <form  id = "addinter" method = "post" action="#">
+            <div>
+              <fieldset>
+                <legend>Interview Info:</legend>
+
+                  <div>
+                    <label for="coname">Company: </label>
+                    <input type="text" id="coname" name="co_name">
+                    <label for="position">      Position: </label>
+                    <input type="text" id="position" name="position">
+                  </div>
+                  <div>
+                   
+                    <label for="inter-date"> Date: </label>
+                    <input type="date" id = "inter_date" name="interdate">
+                 
+                    <label for="inter-time"> Time: </label>
+                    <input type="time" id = "inter_time" name="inter_time">
+                  </div>
+                  <div>
+                    <label for="address">Address: </label>
+                    <input type="text" size="50" id="address" name="adress">
+                  </div>
+                  <div>
+                    
+                    <label for="hr_name">  HR Contact: </label>
+                    <input type="text" id = "hr_name" name="hr_name">
+                  </div>
+
+                  <div>
+                    
+                    <label for="hr_phone">HR Phone: </label>
+                    <input type="tel" id = "hr_phone" name="hr_phone">
+                  
+                    <label for="hr_email">  Email: </label>
+                    <input type="email" id = "hr_email" name="hr_email">
+
+                  </div>
+
+              </fieldset>
+
+              <fieldset>
+                <div>
+                  <legend>Notes:</legend>
+                    <textarea id="notes"
+                       name="notes" value="interview-y" maxlenght= "200" rows="10" cols="80">
+                      
+                   </textarea>
+                    
+                </div>
+              </fieldset>
+
+              
+             <div>
+               <input id="intersubmit" class="form-btn" type ="submit" value = "Submit">
+               <input class = "form-btn" type ="reset" value = "Clear">
+             </div>
+            
+            
+          </form> 
+       </div>
+
+       </div> 
+      
+      </div>
+      <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+          <div id="myInter" class="col-sm-6">
+          <h4><strong>Current Scheduled Interviews</strong></h4>
+     
+        </div>
+    </div>
+    </div>    
+  </footer>
+    </body>
+    

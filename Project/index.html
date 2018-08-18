@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<!-- Job Application Tracker -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Add a Job Application </title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+      <script <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+    $(document).ready(function(){
+
+     
+      $("#description").fadeIn(3000);
+      $("#add").on("click", function(){
+         $("div").attr("id","status");
+         
+      });
+     
+   });
+     
+   </script>
+  
+   </head>
+   
+   <body>
+
+     <nav id = "header" class="navbar navbar-default">
+
+      <div class="container">
+
+        <div id="title" class="navhead">
+
+         <h1>The Job Application Tracker</h1>
+         
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      </div>
+
+      <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="addapp.html">
+                <span class="glyphicon glyphicon-plus-sign"></span><br class="hidden-xs">Add Job Application</a>
+            </li>
+            <li>
+              <a href="interview.html">
+                <span class="glyphicon glyphicon-calendar"></span><br class="hidden-xs">Add Interview</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-search"></span><br class="hidden-xs"> Search</a>
+            </li>
+            
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      
+      </div><!-- Container -->
+
+    </nav>
+      
+     <div id="main" class="container"> 
+       
+      <div class="jumbotron">
+       
+        <div id="description">
+          
+          <p>Your application tracker will help you manage your job applications and quickly find your dream job.</p>
+          <p>Let's Get Started!</p>
+
+         </div> 
+
+        <div id="buttons" class="row">
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+           <button id = "add-btn" class = "main-btn"><a href="addapp.html">Add a new Job Application</button>
+         </div>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+           <button id = "interview-btn" class = "main-btn"><a href = "interview.html">Add a Job Interview </button>
+         </div>
+       </div>
+
+
+       </div> 
+      
+      </div>
+       
+
+      <div class="container">
+      <div class="row">
+        <section id="apps" class="col-md-6 col-sm-6 col-xs-12">
+          <span>Open Job Applications</span><br>
+          <p id="app1"></p>
+          
+          <hr class="visible-xs">
+        </section>
+        <section id="interviews" class="col-md-6 col-sm-6 col-xs-12">
+          <span>Interviews</span><br>
+          
+          <hr class="visible-xs">
+        </section>
+        
+      </div>
+      
+    </div>
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
+   
+  </body>
+
+</html>
